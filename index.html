@@ -2,82 +2,25 @@
 <html>
 <head>
 	<title> TEST UI FIYER </title>
-
-	<style>
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 61px;
-  height: 35px;
-}
-
-.switch input {display:none;}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: blue;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: red;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-	</style>
+<style type="text/css"></style>
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDCM1ZDEa4256l5uaN_8s8Lqb8rOFkd_qk",
+    authDomain: "test1-59b46.firebaseapp.com",
+    databaseURL: "https://test1-59b46.firebaseio.com",
+    storageBucket: "test1-59b46.appspot.com",
+    messagingSenderId: "179860541723"
+  };
+  firebase.initializeApp(config);
+</script>
 
 </head>
 <center>
 <body>
 
-<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDeAzVFL115XjtPbMNQ1q0SJ5ZAoqMxou8",
-    authDomain: "ledtests2-3-2560.firebaseapp.com",
-    databaseURL: "https://ledtests2-3-2560.firebaseio.com",
-    storageBucket: "ledtests2-3-2560.appspot.com",
-    messagingSenderId: "27670969477"
-  };
-  firebase.initializeApp(config);
-  
-</script>
+
 
 
 
