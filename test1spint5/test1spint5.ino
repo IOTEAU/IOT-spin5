@@ -4,14 +4,14 @@
 int lamp = D1;
 int lamp1 =D2;
 int lamp2 =D3;
-int lamp3 =D3;
+int lamp3 =D5;
 
 
 #define FIREBASE_HOST "test1-59b46.firebaseio.com"
 #define FIREBASE_AUTH "81LyQY5oyjuS9WNN9pzdn1gIoXbtzbbk1G9y4SE2"
 
-#define WIFI_SSID "EAU_WiFi_byAIS"
-#define WIFI_PASSWORD ""
+#define WIFI_SSID "iPad"
+#define WIFI_PASSWORD "mimimiml1111"
 
 void setup() {
   // put your setup code here, to run once:
@@ -42,10 +42,10 @@ Firebase.begin(FIREBASE_HOST,FIREBASE_AUTH);
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int sum =Firebase.getInt("Lamp");
-  int sum1 =Firebase.getInt("Lamp1");
-  int sum2 =Firebase.getInt("Lamp2");
-  int sum3 =Firebase.getInt("Lamp3");
+  int sum =Firebase.getInt("lamp");
+  int sum1 =Firebase.getInt("lamp1");
+  int sum2 =Firebase.getInt("lamp2");
+  int sum3 =Firebase.getInt("lamp3");
 
   if(sum == 0){
     digitalWrite(lamp,HIGH);
