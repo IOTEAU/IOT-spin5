@@ -206,12 +206,9 @@ Queue.prototype.dequeue = function() {
  for(var i =1;i<=5;i++){
 	 ffff.enqueue(i)
     queue(5)
+}// send val in Queue
 
-   
-
- }
-
- console.log(ffff.dequeue())
+ console.log(ffff.dequeue())//pull val out Queue
 
 
 
