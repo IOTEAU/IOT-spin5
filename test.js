@@ -169,7 +169,7 @@
 
 var Queue = function() {
   this.first = null;
-  this.size = 5;
+  this.size = 0;
 };
 
 var Node = function(data) {
@@ -202,23 +202,31 @@ Queue.prototype.dequeue = function() {
 };
 
  var ffff =new Queue();
+ chackQueue(ffff);
 
- for(var i =1;i<=5;i++){
+ 
+ for(var i =1;i<=50;i++){
 	 ffff.enqueue(i)
+
     
 }// send val in Queue
+console.log(ffff)
 
- console.log(ffff.dequeue())//pull val out Queue
+function chackQueue(queue){
+	if (queue <= 50) {
+		openAir();
+	}else{
+		 setTimeout(function(){},3000);
+		openAir();
+	}
+}
 
-
-
-// var v=10;
-// console.log(2*++v)
-// for ( v = 0; v < 5; v++) {
-// console.log(v)
-// }
-
-
+function openAir(){
+	for(var i =1;i<=2;i++){
+  // var open= ffff.dequeue() //pull val out Queue
+}
+console.log('open')
+}
 
 
 
