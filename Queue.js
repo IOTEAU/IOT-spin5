@@ -1,69 +1,71 @@
-
- var stac = new Array();
-var getArray = [2,3,23,2,12,4,34,3,543,5,46,56]
+var stac = new Array();
+var getArray = [2, 3, 23,2,34,3,4,45]
 
 
 insertQueue(getArray)
 
-function insertQueue(item){
+
+
+function insertQueue(item) {
     for (var i = 0; i < item.length; i++) {
-      inQueue(item[i])
-       }
+        inQueue(item[i])
+    }
+
+}
+
+function inQueue(data) {
+
+
+    stac.push(data)
+
+
+}
+// console.log(stac)
+chackDataQueue(stac)
+
+
+function chackDataQueue(dataQueue) {
     
+    while (!isEmpty()) {
+
+
+
+        if (dataQueue.length <= 4) {
+
+            outQueue()
+
+        } else {
+
+            outQueueWiat()
+
+        }
+
     }
-
-function inQueue(data){
-   
-
-     stac.push(data)
-     
-    }
-
-    chackDataQueue(stac)
-     
+}
 
 
-function chackDataQueue(dataQueue){
+function outQueue() {
 
-    if (dataQueue.length <= 4) {
+    var sum = stac.shift()
+    console.log(sum)
 
-       outQueue()
+    
+}
 
-       // var data = stac.shift()
-       // console.log(data)
 
-    }else{
-        
-        timeOut()
-      
-    }
+function outQueueWiat() {
 
+    if (true) {}
+    
+
+    
 }
 
 
 
-function outQueue(){
-
-    while(!isEmpty()){
-        console.log('out  ='+ stac.shift())
-
-    }
-
-     
 
 
 
+function isEmpty() {
+    return 0 == stac.length
 }
-
-function isEmpty(){
-    return 0==stac.length
-}
-
-function timeOut(){
-    setTimeout(function(){
-        
-        return stac;
-    },3000)
-}
-
-
