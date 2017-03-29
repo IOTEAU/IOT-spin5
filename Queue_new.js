@@ -29,9 +29,6 @@ function chackDataQueue(dataQueue){
 
        outQueue()
 
-       // var data = stac.shift()
-       // console.log(data)
-
     }else{
 
         timeOut()
@@ -40,18 +37,12 @@ function chackDataQueue(dataQueue){
 
 }
 
-
-
 function outQueue(){
 
     while(!isEmpty()){
         console.log('out  ='+ stac.shift())
 
     }
-
-
-
-
 
 }
 
@@ -60,10 +51,11 @@ function isEmpty(){
 }
 
 function timeOut(){
-  setInterval(function() { stac2 = stac.shift(); }, 3000)
+	
+  setInterval(function() { 
+  	stac2 = stac.shift(); 
 
-    setInterval(function() {
-        console.log(stac);
-        console.log(stac2);
-    }, 3000)
+	console.log(stac2);
+  }, 3000)
+   
 }
