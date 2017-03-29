@@ -9,18 +9,18 @@ function insertQueue(item){
     for (var i = 0; i < item.length; i++) {
       inQueue(item[i])
        }
-    
+
     }
 
 function inQueue(data){
-   
+
 
      stac.push(data)
-     
+
     }
 
     chackDataQueue(stac)
-     
+
 
 
 function chackDataQueue(dataQueue){
@@ -33,9 +33,9 @@ function chackDataQueue(dataQueue){
        // console.log(data)
 
     }else{
-        
+
         timeOut()
-      
+
     }
 
 }
@@ -49,7 +49,7 @@ function outQueue(){
 
     }
 
-     
+
 
 
 
@@ -60,10 +60,10 @@ function isEmpty(){
 }
 
 function timeOut(){
-    setTimeout(function(){
-        
-        return stac;
-    },3000)
+  setInterval(function() { stac2 = stac.shift(); }, 3000)
+
+    setInterval(function() {
+        console.log(stac);
+        console.log(stac2);
+    }, 3000)
 }
-
-
