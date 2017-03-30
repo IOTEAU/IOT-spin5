@@ -29,6 +29,19 @@
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDCM1ZDEa4256l5uaN_8s8Lqb8rOFkd_qk",
+            authDomain: "test1-59b46.firebaseapp.com",
+            databaseURL: "https://test1-59b46.firebaseio.com",
+            storageBucket: "test1-59b46.appspot.com",
+            messagingSenderId: "179860541723"
+        };
+        firebase.initializeApp(config);
+    </script>
+
 
 
 
@@ -63,7 +76,7 @@
                                 <label for="txt_pass">Password</label>
                                 <input type="password" class="form-control" id="txt_pass" placeholder="Password">
                             </div>
-                            <button type="sign in" class="btn btn-default">เข้าสู่ระบบ</button>
+                            <button type="sign in" class="btn btn-default" onclick="BtnLogIn()">เข้าสู่ระบบ</button>
                         </div>
                     </form>
 
@@ -125,7 +138,13 @@
                                                     <div class="well">
                                                         <h4>S101</h4>
                                                         <hr> แสงสว่าง
+
+
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40"></right>
                                                         <br><br> เครื่องปรับอากาศ
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
                                                     </div>
                                                 </div>
 
@@ -134,16 +153,24 @@
                                                     <div class="well">
                                                         <h4>S102</h4>
                                                         <hr> แสงสว่าง
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
                                                         <br><br> เครื่องปรับอากาศ
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
                                                     </div>
                                                 </div>
 
 
                                                 <div class="col-md-4">
                                                     <div class="well">
-                                                        <h4>S103
-                                                            <hr> แสงสว่าง</h4>
+                                                        <h4>S103</h4>
+                                                        <hr> แสงสว่าง</h4>
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
                                                         <br><br> เครื่องปรับอากาศ
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
                                                     </div>
                                                 </div>
 
@@ -200,18 +227,12 @@
                                                 <div class="container-fludid">
 
 
-
-
-
-
-
-
-
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
+<<<<<<< HEAD
 
 
 
@@ -236,6 +257,8 @@
 
                                     <script src="js/connectFirebase.js"></script>
 
+=======
+>>>>>>> origin/master
 </body>
 
 </html>
