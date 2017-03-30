@@ -1,73 +1,71 @@
+var stac = new Array();
+var getArray = [2, 3, 23,2,34,3,4,45]
 
-var Q = new Queue();
-var getArray = [24,245,45,56,67,9]
 
-
-if (getArray == '') {
-
-    console.log(".....")
-
-} else {
-
-    myLoop(getArray);
-
-}
+insertQueue(getArray)
 
 
 
-function myLoop(item) {
-
-
-
+function insertQueue(item) {
     for (var i = 0; i < item.length; i++) {
-        var sum=Q.enqueue(item[i]);
-        
+        inQueue(item[i])
     }
-chackQueue(sum)
+
+}
+
+function inQueue(data) {
+
+
+    stac.push(data)
+
+
+}
+// console.log(stac)
+chackDataQueue(stac)
+
+
+function chackDataQueue(dataQueue) {
     
-//     for (var i = 0; i < item.length; i++) {
-        
-// //         // var time= setTimeout(Q.dequeue(), 3000);
-//  console.log(Q.dequeue())
-
- 
-//  // console.log(Q.dequeue())
-
-//    }
-
-}
+    while (!isEmpty()) {
 
 
 
-function Queue() {
-    this.stac = new Array();
-    this.dequeue = function() {
-    	
-        return this.stac.pop();
-    }
-    this.enqueue = function(item) {
-        this.stac.unshift(item);
-    }
+        if (dataQueue.length <= 4) {
 
-}
+            outQueue()
 
+        } else {
 
+            outQueueWiat()
 
-function chackQueue(queue){
-    if (queue <= 50) {
-        openAir();
-    }else{
-         setTimeout(function(){},3000);
-        openAir();
+        }
+
     }
 }
 
-function openAir(){
-    for(var i =1;i<=item.length;i++){
-   var open= Q.dequeue() //pull val out Queue
+
+function outQueue() {
+
+    var sum = stac.shift()
+    console.log(sum)
+
+    
 }
-console.log(open)
+
+
+function outQueueWiat() {
+
+    if (true) {}
+    
+
+    
 }
 
 
 
+
+
+
+function isEmpty() {
+    return 0 == stac.length
+}
