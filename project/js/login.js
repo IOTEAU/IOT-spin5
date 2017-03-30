@@ -16,6 +16,6 @@ firebase.auth().signInWithEmailAndPassword(email, password)
     } else {
       alert(errorMessage);
     } return;
-     }) 
+     });
   
 };
