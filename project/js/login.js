@@ -1,6 +1,6 @@
 function BtnLogIn() {
-  var email = document.getElementById('txt_email').value;
-  var password = document.getElementById('txt_pass').value;
+  var email = document.getElementById('txt-email').value;
+  var password = document.getElementById('txt-pass').value;
 firebase.auth().signInWithEmailAndPassword(email, password)
   .then(function(user) {
        // Success 
